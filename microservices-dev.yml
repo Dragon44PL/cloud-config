@@ -12,3 +12,16 @@ eureka:
     healthcheck:
       enabled: true
     eureka-server-port: 8761
+
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    jmx:
+      exposure:
+        include: '*'
